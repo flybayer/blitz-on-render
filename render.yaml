@@ -3,5 +3,5 @@ services:
     name: blitz-on-render
     env: node
     plan: starter
-    buildCommand: yarn; yarn build
-    startCommand: yarn blitz start --production
+    buildCommand: yarn
+    startCommand: yarn blitz start --production -H 0.0.0.0
