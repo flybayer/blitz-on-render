@@ -4,7 +4,7 @@ services:
     env: node
     plan: starter
     buildCommand: yarn; blitz db migrate
-    startCommand: yarn blitz start --production -H 0.0.0.0
+    startCommand: blitz start --production -H 0.0.0.0
     envVars:
       - key: DATABASE_URL
         fromDatabase:
